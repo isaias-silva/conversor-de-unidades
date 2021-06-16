@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(0, 0, 0);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 2px;
+    position: relative;
+    top: -50px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: gray;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.menu ul li a:hover {
+    border-color: gray;
+}
+
+.logo img {
+    width: 100px;
+}
+
+@media screen and (max-width:500px) {
+    .menu {
+        margin-top: 100px;
+        position: relative;
+        right: 30%;
+    }
+    .menu ul li {
+        display: block;
+        margin-top: 30px;
+    }
+}
