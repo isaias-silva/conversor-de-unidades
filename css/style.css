@@ -51,5 +51,15 @@ header {
     .menu ul li {
         display: block;
         margin-top: 30px;
+        text-align: center;
     }
+}
+
+footer {
+    background: black;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    color: gray;
+    text-align: center;
 }
