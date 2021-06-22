@@ -5,31 +5,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>conversor de texto</title>
+    <title>conversor de medidas</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!--cabeçalho-->
     <header>
-        <div class="logo"> <img src="img/icon.png" alt=""></div>
+        <!--logo-->
+        <div class="logo">
+            <img src="img/icon.png" alt="">
+            <h1>conversor</h1>
 
+        </div>
+        <!--menu-->
         <div class="menu">
             <ul>
                 <li>
-                    <a href="criador">criador</a>
+                    <a href="#criador">criador</a>
                 </li>
                 <li>
-                    <a href="como usar">como usar</a>
+                    <a href="#como usar">como usar</a>
                 </li>
                 <li>
-                    <a href="codigo fonte">codigo fonte</a>
+                    <a href="#codigo fonte">codigo fonte</a>
                 </li>
             </ul>
         </div>
     </header>
+
+
+    <section id="select_tamanho">
+        <h2>conversor</h2>
+        <!--select que decidira a unidade a ser calculada-->
+        <div class="box">
+            <select name="unidade" id="unida-medida" onclick="check(this.value)">
+                <option  value="tamanho">tamanho</option>
+                <option value="area">area</option>
+                <option value="volume">volume</option>
+               
+            </select>
+        </div>
+
+
+        <!--select que escolherá a medida-->
+        <div class="box">
+            <!--tamanho-->
+            <select name="tm" id="tm">
+                <option value="m" class="t">m</option>
+                <option value="dam"  class="t">dam</option>
+                <option value="hm"  class="t">hm</option>
+                <option value="km"  class="t">km</option>
+                <option value="dm"  class="t">dm</option>
+                <option value="cm"  class="t">cm</option>
+                <option value="mm"  class="t">mm</option>
+              
+              
+                
+            </select>
+            <!--area-->
+            <select name="ar" id="ar">
+                <option value="m2" class="a">m2</option>
+                <option value="dam2"  class="a">dam2</option>
+                <option value="hm2"  class="a">hm2</option>
+                <option value="km2"  class="a">km2</option>
+                <option value="dm2"  class="a">dm2</option>
+                <option value="cm2"  class="a">cm2</option>
+                <option value="mm2"  class="a">mm2</option>
+              
+            </select>
+            <!--volume-->
+            <select name="vol" id="vol">
+                <option value="m3" class="a">m3</option>
+                <option value="dam3"  class="a">dam3</option>
+                <option value="hm3"  class="a">hm3</option>
+                <option value="km3"  class="a">km3</option>
+                <option value="dm3"  class="a">dm3</option>
+                <option value="cm3"  class="a">cm3</option>
+                <option value="mm3"  class="a">mm3</option>
+              
+            </select>
+            <input type="number" name="valor1" id="v1">
+        </div>
+        <div class="box">
+            <select name="tm" id="tm2">
+                <option value="m"  class="t">m</option>
+                <option value="dam"  class="t">dam</option>
+                <option value="hm" class="t">hm</option>
+                <option value="km" class="t">km</option>
+                <option value="dm" class="t">dm</option>
+                <option value="cm" class="t">cm</option>
+                <option value="mm" class="t">mm</option>
+           
+           
+                
+            </select>
+
+            <select name="ar" id="ar2">
+                <option value="m2" class="a">m2</option>
+                <option value="dam2"  class="a">dam2</option>
+                <option value="hm2"  class="a">hm2</option>
+                <option value="km2"  class="a">km2</option>
+                <option value="dm2"  class="a">dm2</option>
+                <option value="cm2"  class="a">cm2</option>
+                <option value="mm2"  class="a">mm2</option>
+              
+            </select>
+
+
+            <select name="vol2" id="vol2">
+                <option value="m3" class="a">m3</option>
+                <option value="dam3"  class="a">dam3</option>
+                <option value="hm3"  class="a">hm3</option>
+                <option value="km3"  class="a">km3</option>
+                <option value="dm3"  class="a">dm3</option>
+                <option value="cm3"  class="a">cm3</option>
+                <option value="mm3"  class="a">mm3</option>
+              
+            </select>
+
+
+            <input type="number" name="valor2" id="v2">
+
+        </div>
+        <button onclick="calcule()">calcular</button>
+    </section>
+
+
+
     <footer>
         <p>isaias santos &copy;</p>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
